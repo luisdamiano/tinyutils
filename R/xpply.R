@@ -7,8 +7,8 @@
 #' of all the vectors supplied in the ... arguments
 #' @export
 #' @examples
-#' x = letters[1:3]
-#' y = LETTERS[1:4]
+#' x = month.name
+#' y = 2022:2025
 #' z = 1:5
 #' myfun <- function(x1, x2, x3) { paste(x1, x2, x3) }
 #' xpply(myfun, x, y, z)
