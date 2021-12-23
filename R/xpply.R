@@ -1,4 +1,4 @@
-#' xpply Apply a function to all combinations of variables
+#' Apply a function to all combinations of variables
 #'
 #' @param f function taking as many arguments as passed in `...`
 #' @param ...vectors, factors or a list containing these
