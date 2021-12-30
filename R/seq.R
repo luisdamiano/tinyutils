@@ -7,12 +7,12 @@
 #'
 #' @examples
 #' x <- sample(1:5, 30, replace = TRUE)
-#' data.frame(group = x, id = seq_group(x))
+#' data.frame(group = x, id = seq_unique(x))
 #' y <- LETTERS[x]
-#' data.frame(group = y, id = seq_group(y))
+#' data.frame(group = y, id = seq_unique(y))
 #'
 #' # By default, `kmeans` clusters are ordered by the means
-#' seq_group(kmeans(mtcars, 3)$cluster)
-seq_group <- function(x) {
+#' seq_unique(kmeans(mtcars, 3)$cluster)
+seq_unique <- function(x) {
   match(x, unique(x))
 }
