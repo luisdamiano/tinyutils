@@ -7,5 +7,5 @@
 #'
 #' @examples
 #' # Count missing data per column
-#' sapply(airquality, is.na %!>% sum)
-`%!>%` <- function(f1, f2) { function(...) { f2(f1(...)) } }
+#' sapply(airquality, is.na %:% sum)
+`%:%` <- function(f1, f2) { function(...) { f2(f1(...)) } }
