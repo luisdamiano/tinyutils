@@ -14,7 +14,7 @@
 #' xpply(myfun, x, y, z)
 xpply <- function(f, ...) {
   # Use expand.grid to create a list with all combinations of ... args
-  xList <- as.list(do.call(expand.grid, list(...)))
+  xList <- as.list(do.call(expand.grid, list(stringsAsFactors = FALSE, ...)))
 
   # Use Map to apply f over all combinations
   do.call(Map, c(list(f = f), unname(xList)))
